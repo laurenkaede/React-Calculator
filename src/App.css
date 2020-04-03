@@ -1,38 +1,80 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Oxanium&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+
+body {
+  background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(252, 249, 249);
+  font-size: 36px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 32.9%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  max-width: 560px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Cinzel', serif;
+  background-color: rgb(134, 70, 146);
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+h2 {
+  background-color: black;
+  margin-top: 50px;
   color: white;
+  font-size: 44px;
+  padding: 14px;
+  margin-left: 30%;
+  max-width: 668px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: "Oxanium", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background-color: black;
+  font-weight: bold;
+  margin-left: 30%;
+  text-align: center;
+  max-width: 668px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container > div {
+  padding: 20px;
+  width: 24%;
+  background-color: rgb(227, 196, 235);
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+}
+
+.container .operators, .container .operators1 {
+  background-color: rgb(134, 70, 146);
+}
+
+.container .equals, .container .cleared {
+  background-color: rgb(201, 143, 201);
+}
+
+.container .operators1 {
+  font-size: 48px;
 }
